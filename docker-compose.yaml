@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  app:
+    container_name: webApp
+    image: chathuradandeniya/webapp:1.1.1
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=test
